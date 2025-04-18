@@ -139,6 +139,7 @@ body {
     border-radius: 30px;
     background-color: #84e9bd;
 }
+
 .search__s1 input:focus {
     outline: none;
 }
@@ -146,6 +147,76 @@ body {
 /*Search Phone*/
 .search__phone {
     display: none;
+}
+
+.sale-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    z-index: -1;
+}
+.sale-image img{
+    border-radius: 20px;
+}
+.sale-image__offer{
+    color: white;
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    width: 25%;
+}
+.sale-image__offer__p{
+    font-size: 18px;
+
+}
+.sale-image__offer__p__button{
+    background-color: white;
+    border: none;
+    padding: 2px;
+    border-radius: 5px;
+    color: black;
+}
+.sale-image__offer__h2{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.sale-image__offer__h4{
+    font-size: 28px;
+}
+.sale-image__offer__button{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    width: 45%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.sale-image-phone{
+    display: none;
+}
+
+.explore-world{
+    margin: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.explore-world-card{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    overflow-x: auto;
+}
+.explore-world-card::-webkit-scrollbar{
+    width: 0;
+}
+.explore-world-card img{
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+
 }
 
 
@@ -202,7 +273,8 @@ body {
     .search {
         display: none;
     }
-    .search__phone{
+
+    .search__phone {
         display: flex;
         justify-content: center;
         padding: 20px;
@@ -214,36 +286,107 @@ body {
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 10px;
-        
+
     }
-    .search__phone__s{
+
+    .search__phone__s {
         display: flex;
         justify-content: center;
         width: 100%;
     }
-    .search__phone__s1{
+
+    .search__phone__s1 {
         display: flex;
         align-items: center;
         gap: 10px;
         border-bottom: solid gray 1px;
         padding-bottom: 10px;
     }
-    .search__phone__s1 input{
+
+    .search__phone__s1 input {
         background-color: transparent;
         border: none;
         width: 300px;
     }
+
     .search__phone__s1 input:focus {
         outline: none;
     }
-    .search__phone__search{
+
+    .search__phone__search {
         text-align: center;
         margin-top: 10px;
         border: solid #84e9bd 1px;
         border-radius: 20px;
         padding: 5px;
-        background-color:#84e9bd; ;
+        background-color: #84e9bd;
+        
+    }
+
+    /*sale image*/
+
+    .sale-image{
+        display: none;
+    }
+    .sale-image-phone {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+        height: 200px;
+    }
+    .sale-image-phone img{
+        border-radius: 20px;
+        width: 80%;
+    }
+    .sale-image-phone__offer{
+        color: white;
+        position: absolute;
+        top:40px;
+        left: 60px;
+        width: 45%;
+    }
+    .sale-image-phone__offer__p{
+        font-size: 10px;
+    
+    }
+    .sale-image-phone__offer__p__button{
+        background-color: white;
+        border: none;
+        padding: 2px;
+        border-radius: 5px;
+        color: black;
+    }
+    .sale-image-phone__offer__h2{
+        padding-top: 8px;
+        padding-bottom:8px;
+        font-size: 12px;
+    }
+    .sale-image-phone__offer__h4{
+        font-size: 10px;
+    }
+    .sale-image-phone__offer__button{
+        background-color: white;
+        color: black;
+        padding: 5px;
+        width: 60%;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    /*Explore World*/
+    .explore-world{
+        margin: 20px;
+    }
+    .explore-world-card img{
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-top: 20px;
+    
     }
     
+
 
 }
