@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar p {
+    font-weight: bold;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar__s2 p {
+    border: solid white 1px;
+    padding: 8px;
+}
+
+.navbar__s2 p:hover {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 8px;
+    border: solid #f2f2f2 1px;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar__s3__line {
+    border-left: solid rgb(235, 232, 232) 2px;
+    padding-left: 5px;
+}
+
+.navbar__s3__border {
+    border: solid white 1px;
+    padding: 8px;
+}
+
+.navbar__s3__border:hover {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 8px;
+    border: solid #f2f2f2 1px;
+}
+
+.navbar__s3__button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.navbar__phone {
+    display: none;
+}
+
+.category {
+    margin-top: 80px;
+}
+
+.category__s1 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.category__s2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.category__s2 p {
+    border-bottom: solid white 2px;
+}
+
+.category__s2 p:hover {
+    border-bottom: solid black 2px;
+}
+
+.category__phone {
+    display: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.search__s1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 5PX;
+    padding-bottom: 5px;
+    border: solid white 1px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 600px;
+    border-radius: 30px;
+}
+
+.search__s1 input {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    width: 450px;
+}
+
+.search__search {
+    border: solid #84e9bd 1px;
+    padding: 10px;
+    padding-right: 15px;
+    border-radius: 30px;
+    background-color: #84e9bd;
+}
+
+/*Search Phone*/
+.search__phone {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:500px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    /*Navbar Phone*/
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar__phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .navbar__phone img {
+        width: 100px;
+        height: 50px;
+    }
+
+    /*Category Phone*/
+
+    .category {
+        display: none;
+    }
+
+    .category__phone {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        font-size: 14px;
+    }
+
+    /*Search Bar Phone*/
+
+    .search {
+        display: none;
+    }
+    .search__phone{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .search__phone__s1{
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: white;
+        
+    }
+    .search__phone__s2{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+        gap: 10px;
+        border-bottom: solid gray 1px;
+
+    }
+    .search__phone__s1 input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 10px;
+        width: 190px;
+    }
+
+    .search__search__phone {
+        border: solid #84e9bd 1px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #84e9bd;
+        text-align: center;
+    }
+
+   
+
+
+}
