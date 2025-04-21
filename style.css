@@ -468,10 +468,40 @@ body {
     
     }
     .chennai{
-        
-            margin: 20px;
+         margin: 20px;
         
     }
+    .chennai-container{
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+        z-index: -1;
+    }
+    .chennai-container::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    .chennai-container__card img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+    
+    }
+    .chennai-container__card{
+        position: relative;
+    }
+    .chennai-container__card i{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        scale: 200%;
+    }
+    
+    
 
 
 
