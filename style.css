@@ -236,7 +236,7 @@ body {
     position: absolute;
     bottom: 10px;
     padding: 5px;
-    width: 280px;
+    width: 290px;
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
     background-color: rgba(141, 141, 141, 0.15);
@@ -247,30 +247,35 @@ body {
     margin-left: 60px;
     margin-right: 60px;
     margin-top: -30px;
+
 }
-.chennai-container{
+
+.chennai-container {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 40px;
+    gap: 30px;
     margin-top: 20px;
     cursor: pointer;
-    z-index: -1;
 }
+
 .chennai-container::-webkit-scrollbar {
     width: 0;
 }
 
-.chennai-container__card img{
+.chennai-container__card img {
     height: 350px;
     width: 350px;
     border-radius: 20px;
 
 }
-.chennai-container__card{
+
+.chennai-container__card {
     position: relative;
+    z-index: -1;
 }
-.chennai-container__card i{
+
+.chennai-container__card i {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -278,6 +283,80 @@ body {
     scale: 200%;
 }
 
+.get-started {
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #d9f4e9;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    z-index: -1;
+
+}
+
+.get-started__container {
+    display: flex;
+    gap: 40px;
+}
+
+.get-started__container img {
+    width: 150px;
+    border-radius: 20px;
+    transform: rotate(-5deg);
+}
+
+.get-started__container__content {
+    padding-top: 40px;
+}
+
+.get-started__container__content h2 {
+    padding-bottom: 30px;
+}
+
+.get-started__button {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    border: solid black 1px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.destination{
+    margin-left: 60px;
+    margin-right: 60px;
+    z-index: -1;
+}
+.destination-h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.destination-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 30px;
+    position: relative;
+
+}
+.destination-container::-webkit-scrollbar{
+    width: 0;
+}
+.destination-container img{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+}
+.destination-container h2{
+    position: absolute;
+    bottom: 20px;
+    font-size: 30px;
+    padding-left: 10px;
+    color: white;
+    width: 300px;
+}
 
 
 
@@ -461,18 +540,7 @@ body {
     }
 
     /*Chennai*/
-    .chennai-container__card img{
-        height: 150px;
-        width: 150px;
-        border-radius: 20px;
-    
-    }
-    .chennai{
-         margin: 20px;
-        
-    }
-   
-    .chennai-container__card img{
+    .chennai-container__card img {
         height: 150px;
         width: 150px;
         border-radius: 20px;
@@ -480,8 +548,32 @@ body {
         border-radius: 10px;
 
     }
-  
-    
+
+    .chennai {
+        margin: 20px;
+        margin-top: -30px;
+
+    }
+
+    .get-started {
+        display: none;
+    }
+    .destination-container img{
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+    }
+    .destination{
+        margin: 20px;
+        margin-top: -40px;
+    }
+    .destination-container h2{
+        font-size: 16px;
+        bottom: 10px;
+        width: 140px;
+    }
+
+
 
 
 
