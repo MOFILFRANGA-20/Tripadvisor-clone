@@ -156,35 +156,42 @@ body {
     position: relative;
     z-index: -1;
 }
-.sale-image img{
+
+.sale-image img {
     border-radius: 20px;
 }
-.sale-image__offer{
+
+.sale-image__offer {
     color: white;
     position: absolute;
     top: 80px;
     left: 200px;
     width: 25%;
 }
-.sale-image__offer__p{
+
+.sale-image__offer__p {
     font-size: 18px;
 
 }
-.sale-image__offer__p__button{
+
+.sale-image__offer__p__button {
     background-color: white;
     border: none;
     padding: 2px;
     border-radius: 5px;
     color: black;
 }
-.sale-image__offer__h2{
+
+.sale-image__offer__h2 {
     font-weight: bolder;
     font-size: 50px;
 }
-.sale-image__offer__h4{
+
+.sale-image__offer__h4 {
     font-size: 28px;
 }
-.sale-image__offer__button{
+
+.sale-image__offer__button {
     background-color: white;
     color: black;
     padding: 5px;
@@ -192,31 +199,83 @@ body {
     border-radius: 20px;
     margin-top: 10px;
 }
-.sale-image-phone{
+
+.sale-image-phone {
     display: none;
 }
 
-.explore-world{
+.explore-world {
     margin: 40px;
     margin-left: 60px;
     margin-right: 60px;
 }
-.explore-world-card{
+
+.explore-world-card {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-direction: row;
     overflow-x: auto;
+    position: relative;
+    z-index: -1;
+
 }
-.explore-world-card::-webkit-scrollbar{
+
+.explore-world-card::-webkit-scrollbar {
     width: 0;
 }
-.explore-world-card img{
+
+.explore-world-card img {
     width: 300px;
     height: 300px;
     cursor: pointer;
     border-radius: 10px;
     margin-top: 20px;
+}
 
+.explore-world-card h1 {
+    position: absolute;
+    bottom: 10px;
+    padding: 5px;
+    width: 280px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    background-color: rgba(141, 141, 141, 0.15);
+
+}
+
+.chennai {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: -30px;
+}
+.chennai-container{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: -1;
+}
+.chennai-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.chennai-container__card img{
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+
+}
+.chennai-container__card{
+    position: relative;
+}
+.chennai-container__card i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    scale: 200%;
 }
 
 
@@ -246,13 +305,13 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
     .navbar__phone img {
-        width: 100px;
-        height: 50px;
+        width: 90px;
+        height: 40px;
     }
 
     /*Category Phone*/
@@ -282,7 +341,7 @@ body {
         background-color: white;
         align-items: center;
         cursor: pointer;
-        border-radius: 5px;
+        border-radius: 10px;
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 10px;
@@ -320,14 +379,15 @@ body {
         border-radius: 20px;
         padding: 5px;
         background-color: #84e9bd;
-        
+
     }
 
     /*sale image*/
 
-    .sale-image{
+    .sale-image {
         display: none;
     }
+
     .sale-image-phone {
         display: flex;
         justify-content: center;
@@ -335,37 +395,44 @@ body {
         position: relative;
         height: 200px;
     }
-    .sale-image-phone img{
+
+    .sale-image-phone img {
         border-radius: 20px;
         width: 80%;
     }
-    .sale-image-phone__offer{
+
+    .sale-image-phone__offer {
         color: white;
         position: absolute;
-        top:40px;
+        top: 40px;
         left: 60px;
         width: 45%;
     }
-    .sale-image-phone__offer__p{
+
+    .sale-image-phone__offer__p {
         font-size: 10px;
-    
+
     }
-    .sale-image-phone__offer__p__button{
+
+    .sale-image-phone__offer__p__button {
         background-color: white;
         border: none;
         padding: 2px;
         border-radius: 5px;
         color: black;
     }
-    .sale-image-phone__offer__h2{
+
+    .sale-image-phone__offer__h2 {
         padding-top: 8px;
-        padding-bottom:8px;
+        padding-bottom: 8px;
         font-size: 12px;
     }
-    .sale-image-phone__offer__h4{
+
+    .sale-image-phone__offer__h4 {
         font-size: 10px;
     }
-    .sale-image-phone__offer__button{
+
+    .sale-image-phone__offer__button {
         background-color: white;
         color: black;
         padding: 5px;
@@ -375,18 +442,39 @@ body {
     }
 
     /*Explore World*/
-    .explore-world{
+    .explore-world {
         margin: 20px;
     }
-    .explore-world-card img{
+
+    .explore-world-card img {
         width: 150px;
         height: 150px;
         cursor: pointer;
         border-radius: 10px;
         margin-top: 20px;
+
+    }
+
+    .explore-world-card h1 {
+        width: 140px;
+        bottom: 5px;
+    }
+
+    /*Chennai*/
+    .chennai-container__card img{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
     
     }
-    
+    .chennai{
+        
+            margin: 20px;
+        
+    }
+
+
+
 
 
 }
