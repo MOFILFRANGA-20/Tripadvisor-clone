@@ -16,6 +16,7 @@ body {
     position: sticky;
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2;
 }
 
 .navbar p {
@@ -208,31 +209,32 @@ body {
     margin: 40px;
     margin-left: 60px;
     margin-right: 60px;
+    cursor: pointer;
 }
 
-.explore-world-card {
+.explore-world-container{
     display: flex;
     gap: 30px;
     flex-direction: row;
     overflow-x: auto;
     position: relative;
-    z-index: -1;
-
 }
 
-.explore-world-card::-webkit-scrollbar {
+.explore-world-container::-webkit-scrollbar{
     width: 0;
 }
 
-.explore-world-card img {
+.explore-world-container__card img {
     width: 300px;
     height: 300px;
     cursor: pointer;
     border-radius: 10px;
     margin-top: 20px;
+    z-index: -1;
 }
 
-.explore-world-card h1 {
+
+.explore-world-container__card h1 {
     position: absolute;
     bottom: 10px;
     padding: 5px;
@@ -242,6 +244,7 @@ body {
     background-color: rgba(141, 141, 141, 0.15);
 
 }
+
 
 .chennai {
     margin-left: 60px;
@@ -283,16 +286,17 @@ body {
     scale: 200%;
 }
 
+/* Get Started */
+
 .get-started {
     margin-left: 60px;
     margin-right: 60px;
     background-color: #d9f4e9;
     padding: 20px;
     border-radius: 10px;
-    position: relative;
     cursor: pointer;
     z-index: -1;
-
+    position: relative;
 }
 
 .get-started__container {
@@ -324,6 +328,7 @@ body {
     border-radius: 20px;
 }
 
+/* Destination */
 .destination {
     margin-left: 60px;
     margin-right: 60px;
@@ -339,22 +344,22 @@ body {
     flex-direction: row;
     overflow-x: auto;
     gap: 30px;
-    position: relative;
-    z-index: -1;
-
 }
 
 .destination-container::-webkit-scrollbar {
     width: 0;
 }
+.destination-container__card{
+    position: relative;
+}
 
-.destination-container img {
+.destination-container__card img {
     width: 350px;
     height: 350px;
     border-radius: 10px;
 }
 
-.destination-container h2 {
+.destination-container__card h2 {
     position: absolute;
     bottom: 20px;
     font-size: 30px;
@@ -362,6 +367,9 @@ body {
     color: white;
     width: 300px;
 }
+
+/*more to explore */
+    
 
 .more-to-explore {
     background-color: #faebd7;
@@ -383,7 +391,7 @@ body {
     flex-direction: row;
     overflow-x: auto;
     gap: 30px;
-    z-index: -1;
+  
 }
 
 .more-to-explore__container::-webkit-scrollbar {
@@ -392,13 +400,13 @@ body {
 
 .more-to-explore__container__card {
     position: relative;
-
 }
 
 .more-to-explore__container__card img {
     width: 500px;
     height: 350px;
     border-radius: 20px;
+
 }
 
 .more-to-explore__container__card h4 {
@@ -412,6 +420,54 @@ body {
     right: 30px;
     scale: 200%;
     color: white;
+}
+
+.sponser{
+    background-color: #F2ECF9;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width: 1200px;
+    
+}
+.sponser__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+.sponser__container__card{
+padding: 50px;
+}
+.sponser__container__image img{
+    width: 500px;
+    height: 500px;
+}
+.sponser__container__card__logo img{
+    height: 30px;
+    width: 30px;
+}
+.sponser__container__card__logo {
+    display: flex;
+    flex-direction: row;
+}
+.sponser__container__card__logo a{
+    color: black;
+}
+.sponser__button{
+    border: solid black 1px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    width: 130px;
+    text-align: center;
+    padding: 8px;
+}
+
+/*Sponser Phone*/
+.sponser-phone{
+    display: none;
 }
 
 
@@ -577,28 +633,36 @@ body {
     }
 
     /*Explore World*/
+
     .explore-world {
         margin: 20px;
+        
     }
 
-    .explore-world-card img {
-        width: 150px;
-        height: 150px;
+   
+
+    .explore-world-container__card img {
+        width: 170px;
+        height: 170px;
         cursor: pointer;
         border-radius: 10px;
         margin-top: 20px;
-
     }
 
-    .explore-world-card h1 {
-        width: 140px;
+    .explore-world-container__card h1 {
         bottom: 5px;
+        padding: 5px;
+        width: 160px;
+        color: white;
+        background-color: rgba(141, 141, 141, 0.15);
     }
+
+
 
     /*Chennai*/
     .chennai-container__card img {
-        height: 150px;
-        width: 150px;
+        height: 170px;
+        width: 170px;
         border-radius: 20px;
         cursor: pointer;
         border-radius: 10px;
@@ -614,16 +678,20 @@ body {
         display: none;
     }
 
-    .destination-container img {
-        width: 150px;
-        height: 150px;
-        border-radius: 10px;
-    }
+    /*Destination */
 
     .destination {
         margin: 20px;
         margin-top: -10px;
     }
+
+    .destination-container img {
+        width: 170px;
+        height: 170px;
+        border-radius: 10px;
+    }
+
+  
 
     .destination-container h2 {
         font-size: 16px;
@@ -634,10 +702,11 @@ body {
     /*More to Explore phone */
 
     .more-to-explore {
-        background-color: burlywood;
+        background-color: rgb(226, 204, 176);
         padding: 20px;
         margin-top: 20px;
     }
+
     .more-to-explore__container__card img {
         width: 250px;
         height: 175px;
@@ -660,10 +729,50 @@ body {
         gap: 30px;
         z-index: -1;
     }
+
     .more-to-explore__container__card h4 {
         padding-top: 10px;
         text-align: center;
     }
+
+    /*sponser phone*/
+
+    .sponser{
+        display: none;
+    }
+   .sponser-phone{
+    display: flex;
+    flex-direction: column;
+    background-color: #ded7e5;
+    margin-top: 30px;
+   }
+   .sponser-phone__container{
+    margin: 20px;
+   }
+   .sponser-phone__container__logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+   }
+   .sponser-phone__container__logo img{
+    height: 20px;
+    width: 20px;
+   }
+   .sponser-phone__container__image img{
+    width: 380px;
+    height: 380px;
+    margin-top: 10px;
+   }
+   .sponser-phone__button{
+    border: solid black 1px;
+    width: 80px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+   }
 
 
 
