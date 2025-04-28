@@ -4,165 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripadvisor: Over a billion reviews & contributions to Hotel, Attractions, Restaurants and more</title>
-    <!--My Stylesheeet-->
+    <title>Tripadvisor: Over a billion reviews & contributions for Hotels, Attraction, Restaurants, and more</title>
+    <link rel="icon" href="images/logo-small.png">
+    <!-- My Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    <!--Google Fonts-->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!--Font Awesome Icons-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    <!--Navbar-->
+    <!-- Navbar -->
     <div class="navbar">
-
-        <!--Logo-->
-        <div class="navbar__s1">
-            <img src="./images/logo.png" alt="logo">
+        <!-- Logo -->
+        <div class="navbar__logo">
+            <img src="images/logo.png" alt="tripadvisor">
         </div>
-
-        <!--Middle Section-->
-        <div class="navbar__s2">
+        <!-- Middle Section -->
+        <div class="navbar__s1">
             <p>Discover</p>
             <p>Trips</p>
-            <p>Review</p>
-            <p>Forum</p>
+            <p>Reviews</p>
+            <p>Forums</p>
         </div>
-
-        <!--Signin-->
-        <div class="navbar__s3">
-            <p class="navbar__s3__border"><i class="fa-solid fa-globe" style="color: #000000;"></i> <span
-                    class="navbar__s3__line">INR</span> </p>
-            <p class="navbar__s3__button">Sign in</p>
+        <!-- Signup -->
+        <div class="navbar__s2">
+            <i class="fa-solid fa-globe"></i>
+            <p>| INR</p>
+            <p class="navbar__s2__button">Sign in</p>
         </div>
     </div>
 
-    <!--Navbar Phone-->
-    <div class="navbar__phone">
-        <i class="fa-solid fa-bars fa-2x" style="color: #000000;"></i>
-        <img src="./images/logo.png" alt="Logo">
-        <i class="fa-solid fa-user fa-2x" style="color: #000000;"></i>
+    <!-- Navbar Phone -->
+    <div class="navbar-phone">
+        <div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar-phone__logo">
+            <img src="images/logo.png" alt="tripadvisor">
+        </div>
+        <div>
+            <i class="fa-solid fa-user"></i>
+        </div>
     </div>
 
-    <!--Category-->
-    <div class="category">
-
-        <!--Section 1-->
-        <div class="category__s1">
+    <!-- Categories -->
+    <div class="categories">
+        <div class="section1">
             <h1>Where to?</h1>
         </div>
 
-        <!--Section 2-->
-        <div class="category__s2">
-            <p><i class="fa-solid fa-house" style="color: #000000;"></i> Search All</p>
-            <p> <i class="fa-solid fa-bed" style="color: #000000;"></i></i> Hotels</p>
-            <p><i class="fa-solid fa-camera" style="color: #000000;"></i> Things to Do</p>
-            <p><i class="fa-solid fa-utensils" style="color: #000000;"></i> Restaurants</p>
-            <p><i class="fa-solid fa-plane" style="color: #000000;"></i> Flights</p>
-            <p><i class="fa-solid fa-champagne-glasses" style="color: #000000;"></i> Holiday homes</p>
+        <div class="section2">
+
+            <div class="section2__one">
+                <i class="fa-solid fa-house"></i>
+                <p>Search all</p>
+            </div>
+
+            <div class="section2__two">
+                <i class="fa-solid fa-bed"></i>
+                <p>Hotels</p>
+            </div>
+
+            <div class="section2__three">
+                <i class="fa-solid fa-camera"></i>
+                <p>Things to Do</p>
+            </div>
+
+            <div class="section2__four">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Restaurants</p>
+            </div>
+
+            <div class="section2__five">
+                <i class="fa-solid fa-plane"></i>
+                <p>Flights</p>
+            </div>
+
+            <div class="section2__six">
+                <i class="fa-solid fa-snowflake"></i>
+                <p>Holiday Homes</p>
+            </div>
+
         </div>
     </div>
 
-    <!--Category Phone-->
-    <div class="category__phone">
-        <div class="category__phone__s1">
-        <h1>Where to?</h1>
-    </div>
-</div>
-
-    <!--Search Bar-->
-    <div class="search">
-
-        <!--Section 1-->
-        <div class="search__s1">
-            <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
-            <input type="search" placeholder="Place to go, things to do, hotels...">
-            <p class="search__search">Search</p>
+    <!-- Categories Phone -->
+    <div class="categories-phone">
+        <div class="categories-phone__section1">
+            <h1>Where to?</h1>
         </div>
     </div>
 
-    <!--Search Bar Phone-->
-    <div class="search__phone">
-        <div class="search__phone__s">
-            <div class="search__phone__s1">
-                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+    <!-- Searchbar -->
+    <div class="searchbar">
+        <div class="searchbar__section1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input placeholder="Place to go, thing to do, hotels...">
+            <p class="searchbar__search">Search</p>
+        </div>
+    </div>
+
+    <!-- Searchbar phone -->
+    <div class="searchbar-phone">
+        <div class="searchbar-phone__section">
+            <div class="searchbar-phone__section1">
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input placeholder="Place to go, thing to do, hotels...">
             </div>
-            <p class="search__phone__search">Search</p>
+            <h3 class="searchbar-phone__search">Search</h3>
+
         </div>
     </div>
 
-    <!--Sale image-->
+    <!-- Sale Image-->
     <div class="sale-image">
-        <img src="./images/image-banner.jpg" alt="banner">
+        <img src="images/image-banner.jpg" alt="Background Image" class="image-container__image">
         <div class="sale-image__offer">
-            <p class="sale-image__offer__p">Powered by AI <span class="sale-image__offer__p__button">BETA</span></p>
-            <h2 class="sale-image__offer__h2">Plan your kind of trip</h2>
-            <h4 class="sale-image__offer__h4">Get custom recs for all the things you're into with AI trip builder.</h4>
-            <p class="sale-image__offer__button"><i class="fa-solid fa-rocket" style="color: #000000;"></i> Start a trip
-                with AI</p>
+            <p class="sale-image__offer__p">Powered by AI <button>BETA</button></p>
+            <h1 class="sale-image__offer__h1">Plan your kind of Trip.</h1>
+            <h2 class="sale-image__offer__h2">Get custom recs for all the things you're into with AI trip builder.</h2>
+            <p class="sale-image__offer__button"><i class="fa-solid fa-rocket"></i> Star a trip with AI</p>
+
+        </div>
+    </div>
+    <!-- Sale Image Phone -->
+    <div class="sale-image__phone">
+        <img src="images/image-banner-phone.jpg" alt="Background Image" class="image-container__image">
+        <div class="sale-image__phone__offer">
+            <p class="sale-image__phone__offer__p">Powered by AI <button>BETA</button></p>
+            <h1 class="sale-image__phone__offer__h1">Plan your kind of Trip.</h1>
+            <h4 class="sale-image__phone__offer__h2">Get custom recs for all the things you're into with AI trip
+                builder.</h4>
+            <p class="sale-image__phone__offer__button"><i class="fa-solid fa-rocket"></i> Star a trip with AI</p>
+
         </div>
     </div>
 
-    <!--Sale image phone-->
-    <div class="sale-image-phone">
-        <img src="./images/image-banner-phone.jpg" alt="banner">
-        <div class="sale-image-phone__offer">
-            <p class="sale-image-phone__offer__p">Powered by AI <span
-                    class="sale-image-phone__offer__p__button">BETA</span></p>
-            <h1 class="sale-image-phone__offer__h1">Plan your kind of trip</h2>
-            <h4 class="sale-image-phone__offer__h4">Get custom recs for all the things you're into with AI trip builder.
-            </p>
-            <p class="sale-image-phone__offer__button"><i class="fa-solid fa-rocket"
-                    style="color: #000000;padding-right: 5px;"></i> Start a trip with AI</p>
-        </div>
-    </div>
-
-    <!--Explore the world-->
-    <div class="explore-world">
+    <!-- Explore the world -->
+    <div class="explore">
         <h2>Explore the world's most stunning seasides</h2>
-        <p>2025's Travellers Choice Awards Best of the Best Beaches</p>
-        <div class="explore-world-container">
-            <div class="explore-world-container__card">
-                <img src="./images/caption.jpg" alt="World">
+        <p>2025's Travellers' Choice Awards Best of the Best Beaches</p>
+
+        <div class="explore-image__container">
+            <div>
+                <img src="images/world.jpg">
                 <h1>World</h1>
             </div>
-            <div class="explore-world-container__card">
-                <img src="./images/europe.jpg" alt="europe">
+
+            <div>
+                <img src="images/europe.jpg">
                 <h1>Europe</h1>
             </div>
-            <div class="explore-world-container__card">
-                <img src="./images/asia.jpg" alt="asia">
+
+            <div>
+                <img src="images/asia.jpg">
                 <h1>Asia</h1>
             </div>
-            <div class="explore-world-container__card">
-                <img src="./images/south pacific.jpg" alt="south pacific">
+
+            <div>
+                <img src="images/south-pacific.jpg">
                 <h1>South Pacific</h1>
             </div>
-            <div class="explore-world-container__card">
-                <img src="./images/carribean.jpg" alt="carribean">
-                <h1>Carribbean</h1>
+
+            <div>
+                <img src="images/caribbean.jpg">
+                <h1>Caribbean</h1>
             </div>
+
         </div>
     </div>
 
-    <!--Chennai-->
+    <!-- Chennai -->
     <div class="chennai">
         <h2>Ways to tour Chennai (Madras)</h2>
         <p>Book these experiences for a close-up look at Chennai (Madras).</p>
-        <div class="chennai-container">
-            <div class="chennai-container__card">
+
+        <div class="chennai-image__container">
+            <div class="chennai-image__container__one">
                 <img src="images/mahabalipuram.jpg">
                 <h4 class="chennai-image__container__dec">Mahabalipuram tour by Tourism Ministry approved company</h4>
                 <p class="chennai-image__container__rating">4.9 🟢🟢🟢🟢🟢(292)</p>
                 <h5 class="chennai-image__container__price">from ₹8,323 per adult</h5>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
-            <div class="chennai-container__card">
+
+            <div class="chennai-image__container__two">
                 <img src="images/mylapore-1.jpg">
                 <h4 class="chennai-image__container__dec">Exploring Mylapore: A Cultural & Historical Walking Tour</h4>
                 <p class="chennai-image__container__rating">5 🟢🟢🟢🟢🟢(32)</p>
@@ -170,7 +202,7 @@
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__three">
                 <img src="images/exotic.jpg">
                 <h4 class="chennai-image__container__dec">Private 6 days Exotic Tamilnadu Tour from Chennai</h4>
                 <p class="chennai-image__container__rating">5 🟢🟢🟢🟢🟢(13)</p>
@@ -178,14 +210,15 @@
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__four">
                 <img src="images/mylapore-2.jpg">
                 <h4 class="chennai-image__container__dec">Gods of Mylapore walking tour- tourism ministry approved</h4>
                 <p class="chennai-image__container__rating">3 🟢🟢🟢 (16)</p>
                 <h5 class="chennai-image__container__price">from ₹8,323 per adult</h5>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
-            <div class="chennai-container__card">
+
+            <div class="chennai-image__container__five">
                 <img src="images/chennai.jpg">
                 <h4 class="chennai-image__container__dec">Private Chennai tour by tourism ministry approved company
                 </h4>
@@ -194,7 +227,7 @@
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__six">
                 <img src="images/pondicherry.jpg">
                 <h4 class="chennai-image__container__dec">Chennai to Pondicherry 2-Day Vehicle Hire for Local</h4>
                 <p class="chennai-image__container__rating">5 🟢🟢🟢🟢🟢 (85)</p>
@@ -203,7 +236,7 @@
 
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__seven">
                 <img src="images/lunch.jpg">
                 <h4 class="chennai-image__container__dec">Chennai tour in Private car with guide & lunch by
                     Wonder tours</h4>
@@ -212,7 +245,8 @@
                 <i class="fa-brands fa-gratipay"></i>
 
             </div>
-            <div class="chennai-container__card">
+
+            <div class="chennai-image__container__eight">
                 <img src="images/wonder-tours.jpg">
                 <h4 class="chennai-image__container__dec">Pondicherry day trip from Chennai by Wonder tours</h4>
                 <p class="chennai-image__container__rating">4.1 🟢🟢🟢🟢 (55)</p>
@@ -220,7 +254,7 @@
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__nine">
                 <img src="images/georgetown.jpg">
                 <h4 class="chennai-image__container__dec">Georgetown tour in Chennai about founding
                     of Chennai</h4>
@@ -229,227 +263,241 @@
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="chennai-container__card">
+            <div class="chennai-image__container__ten">
                 <img src="images/temple.jpg">
+
                 <h4 class="chennai-image__container__dec">South India Temple Tour - 14n15d Company approved</h4>
                 <p class="chennai-image__container__rating">5 🟢🟢🟢🟢🟢 (14)</p>
                 <h5 class="chennai-image__container__price">from ₹63,467 per adult</h5>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
+
         </div>
     </div>
 
-    <!--Get started-->
-    <div class="get-started">
-        <div class="get-started__container">
-            <div class="get-started__container__image">
-                <img src="./images/read now.jpg" alt="read now">
-            </div>
-            <div class="get-started__container__content">
-                <h2>Plan your trip your way</h2>
-                <p>Save you faves and more with trips</p>
-            </div>
-        </div>
-        <p class="get-started__button">Get Started</p>
-    </div>
-
-    <!--Destination-->
-    <div class="destination">
-        <h2 class="destination-h2">Top destinations for your next holiday</h2>
-        <div class="destination-container">
-            <div class="destination-container__card">
+    <!-- Holiday -->
+    <div class="holiday">
+        <h2>Top destinations for your next holiday</h2>
+    
+        <div class="holiday-image__container">
+            <div>
                 <img src="images/barcelona-spain.jpg">
-                <h2>Barcelona, Spain</h2>
+                <h1>Barcelona, Spain</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/rome,italy.jpg">
-                <h2>Rome, Italy</h2>
+                <h1>Rome, Italy</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/Florence-italy.jpg">
-                <h2>Florence, Italy</h2>
+                <h1>Florence, Italy</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/londan-uk.jpg">
-                <h2>Londan, UK</h2>
+                <h1>Londan, UK</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/losvegas-NV.jpg">
-                <h2>Los Vegas, NV</h2>
+                <h1>Los Vegas, NV</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/newyorkcity-NY.jpg">
-                <h2>New York City, NY</h2>
+                <h1>New York City, NY</h1>
             </div>
 
-            <div class="destination-container__card">
-                <img src="images/queenstown-nz.jpg">
-                <h2>Queenstown, New Zealand</h2>
+            <div>
+                <img src="images//queenstown-nz.jpg">
+                <h1>Queenstown, New Zealand</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/reykjavik-Iceland.jpg">
-                <h2>Reykjavik, Iceland</h2>
+                <h1>Reykjavik, Iceland</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/dubai-uae.jpg">
-                <h2>Dubai, United Arab Emirates</h2>
+                <h1>Dubai, United Arab Emirates</h1>
             </div>
 
-            <div class="destination-container__card">
+            <div>
                 <img src="images/rome-italy.jpg">
-                <h2>Rome, Italy</h2>
+                <h1>Rome, Italy</h1>
             </div>
+
         </div>
     </div>
 
-    <!--More to Explore-->
+    <!-- More to Explore -->
 
     <div class="more-to-explore">
         <h2>More to Explore</h2>
+
         <div class="more-to-explore__container">
-            <div class="more-to-explore__container__card">
+
+            <div class="more-to-explore__container__one">
                 <img src="images/bangkok.jpg">
                 <h4>7 Bangkok hotels that highlight Thailand's spectacular architecture</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__two">
                 <img src="images/tokyo.jpg">
                 <h4>3 days in Tokyo: The perfect itinerary</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__three">
                 <img src="images/bali.jpg">
-                <h4>Where Bali's best chefs go on their days off</h4>
+                <h4>Where Bali’s best chefs go on their days off</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__four">
                 <img src="images/phuket.jpg">
                 <h4>6 incredible places to visit near Phuket</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__five">
                 <img src="images/mai.jpg">
                 <h4>3 perfect days in Chiang Mai</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__six">
                 <img src="images/India.jpg">
                 <h4>11 gorgeous places in India that have to be seen to be believed</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__seven">
                 <img src="images/water.jpg">
                 <h4>17 cool stays by the water for a once-in-a-lifetime trip</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__eight">
                 <img src="images/singapore.jpg">
                 <h4>4 best hawker centres in Singapore and what to eat there</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
 
-            <div class="more-to-explore__container__card">
+            <div class="more-to-explore__container__nine">
                 <img src="images/pools.jpg">
                 <h4>16 stunning infinity pools in the world that are worth the trip</h4>
                 <i class="fa-brands fa-gratipay"></i>
             </div>
+
         </div>
     </div>
 
-    <!--Sponser-->
+    <!-- Sponser -->
+
     <div class="sponser">
-        <div class="sponser__container">
-            <div class="sponser__container__image">
-                <img src="./images/image-card.jpg" alt="read now">
-            </div>
-            <div class="sponser__container__card">
-                <div class="sponser__container__card__logo">
-                    <img src="images/logo-small.png" alt="Tripadvisor">
-                    <p> Sponsered by <a href="https://www.tripadvisor.in/">Wanderlab</a></p>
-                </div>
-                <div class="sponser__container__card__content">
-                    <h1>Watch The Wanderer</h1>
-                    <p>Tripadvisor's award-winning travel series, now streaming on Amazon Prime Video</p><br>
-                    <p class="sponser__button">Learn More</p>
-                </div>
-            </div>
+
+        <div class="sponser-image">
+            <img src="images/image-card.jpg" alt="Image">
         </div>
-    </div>
 
-    <!--Sponser Phone-->
-
-    <div class="sponser-phone">
-        <div class="sponser-phone__container">
-            <div class="sponser-phone__container__logo">
+        <div class="sponser-logo">
+            <div class="sponser-logo__s1">
                 <img src="images/logo-small.png" alt="Tripadvisor">
                 <p> Sponsered by <a href="https://www.tripadvisor.in/">Wanderlab</a></p>
             </div>
-            <div class="sponser-phone__container__image">
-                <img src="./images/image-card.jpg" alt="read now">
-            </div>
-            <div class="sponser-phone__container__content">
+
+            <div class="sponser-logo__s2">
                 <h1>Watch The Wanderer</h1>
-                <p>Tripadvisor's award-winning travel series, now streaming on Amazon Prime Video</p><br>
-                <p class="sponser-phone__button">Learn More</p>
+                <p>Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video</p><br>
+
+                <p class="sponser-logo__button">Learn more</p>
             </div>
         </div>
+
     </div>
 
-    <!--Rentals-->
-    <div class="rentals">
+    <!-- Sponser phone -->
+
+    <div class="sponser-phone">
+
+        <div class="sponser-phone__logo">
+            <div class="sponser-logo__s1">
+                <img src="images/logo-small.png" alt="Tripadvisor">
+                <p> Sponsered by <a href="https://www.tripadvisor.in/">Wanderlab</a></p>
+            </div>
+
+            <div class="sponser-phone__image">
+                <img src="images/image-card.jpg" alt="Image">
+            </div>
+
+
+
+            <div class="sponser-phone__logo__s2">
+                <h1>Watch The Wanderer</h1>
+                <p>Tripadvisor's award-winning travel series, now streaming on Amazon Prime Video</p><br>
+
+                <p class="sponser-phone__logo__button">Learn more</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rental -->
+    <div class="rental">
         <h2>Home Rentals Near You</h2>
         <p>We think you'd enjoy these homes for a quick trip out of town.</p>
-        <div class="rentals__container">
-            <div class="rentals__container__card">
+
+        <div class="rental-image__container">
+            <div class="rental-image__container__one">
                 <img src="images/auroville-4.jpg">
                 <h4>Rentals in Auroville</h4>
                 <p>4 rentals</p>
             </div>
-            <div class="rentals__container__card">
+
+            <div class="rental-image__container__two">
                 <img src="images/bengalure-172.jpg">
                 <h4>Rentals in Bengalure</h4>
                 <p>172 rentals</p>
             </div>
-            <div class="rentals__container__card">
+
+            <div class="rental-image__container__three">
                 <img src="images/mahabalipura-10.jpg">
                 <h4>Rentals in Mahabalipuram</h4>
                 <p>10 rentals</p>
             </div>
-            <div class="rentals__container__card">
+
+            <div class="rental-image__container__four">
                 <img src="images/thanjavur-6.jpg">
                 <h4>Rentals in Thanjavur</h4>
                 <p>6 rentals</p>
             </div>
-            <div class="rentals__container__card">
+
+            <div class="rental-image__container__five">
                 <img src="images/tiruchirappalli-3.jpg">
                 <h4>Rentals in Tiruchirappalli</h4>
                 <p>3 rentals</p>
             </div>
-            <div class="rentals__container__card">
+
+            <div class="rental-image__container__six">
                 <img src="images/tiruvannamalai-7.jpg">
                 <h4>Rentals in Tiruvannamalai</h4>
                 <p>7 rentals</p>
-            </div>
+            </div>            
+
         </div>
     </div>
 
-    <!--Footer-->
+
+    <!-- Footer -->
     <div class="footer">
+
         <div class="footer-one">
+
             <div class="footer-one__s1">
                 <h4>About Tripadvisor</h4>
                 <p>About Us</p>
@@ -459,6 +507,7 @@
                 <p>Contact Us</p>
                 <p>Accessibility Statement</p>
             </div>
+
             <div class="footer-one__s2">
                 <h4>Explore</h4>
                 <p>Write a Review</p>
@@ -468,6 +517,7 @@
                 <p>Help Center</p>
                 <p>Travel Stories</p>
             </div>
+
             <div class="footer-one__s3">
                 <h4>Do Business With Us</h4>
                 <p>Owners & DMO/CVB</p>
@@ -479,16 +529,18 @@
                 <p>iphone APP</p>
                 <p>Android APP</p>
             </div>
+
             <div class="footer-one__s4">
                 <h4>Tripadvisor Sites</h4>
                 <p>Book Tour and attraction tickets on <button class="link">Viator</button></p>
-            </div>
-        </div>
 
+            </div>
+
+        </div>
 
         <div class="footer-two">
             <div class="footer-two__s1">
-                <img src="images/logo-small.png" alt="logo">
+                <img src="images/main-image/logo-small.png" alt="logo">
             </div>
             <div class="footer-two__s2">
                 <p class="footer-two__s2__rights">&copy; 2025 TripAdvisor LLC All rights reserved.</p>
@@ -501,6 +553,8 @@
                     <p>Contact Us</p>
                 </div>
             </div>
+
+
             <div class="footer-two__s3">
                 <select class="footer-two__s3__opt1">
                     <option>₹ INR</option>
@@ -537,8 +591,7 @@
         </div>
     </div>
 
-
-    <!--Footer phone-->
+    <!-- Footer phone -->
 
     <div class="footer-phone">
         <div class="footer-phone__one">
@@ -591,7 +644,7 @@
 
         <div class="footer-phone__four">
             <div class="footer-phone__four__s1">
-                <img src="images/logo-small.png" alt="logo">
+                <img src="images/main-image/logo-small.png" alt="logo">
             </div>
             <div class="footer-phone__four__s2">
                 <p class="footer-phone__four__s2__rights">&copy; 2025 TripAdvisor LLC All rights reserved.</p>
@@ -604,6 +657,7 @@
                     <h3>Contact Us</h3>
                 </div>
             </div>
+
         </div>
 
         <div class="footer-phone__five">
@@ -617,6 +671,7 @@
         </div>
 
     </div>
-</body>
+
+</body> 
 
 </html>
