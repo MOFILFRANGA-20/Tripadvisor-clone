@@ -356,7 +356,7 @@ body {
 
 .destination-container::-webkit-scrollbar {
     width: 0;
-}   
+}
 
 .destination-container__card img {
     width: 350px;
@@ -377,126 +377,130 @@ body {
 /*more to explore */
 
 .more-to-explore {
-    background-color: #faebd7;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.more-to-explore h2 {
-    margin: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-
+    padding: 50px;
+    background-color: antiquewhite;
 }
 
 .more-to-explore__container {
-    margin-left: 60px;
-    margin-right: 60px;
+    position: relative;
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    gap: 30px;
-
+    overflow-x: scroll;
+    gap: 40px;
 }
 
 .more-to-explore__container::-webkit-scrollbar {
     width: 0;
 }
 
-.more-to-explore__container__card {
-    position: relative;
-}
-
 .more-to-explore__container__card img {
     width: 500px;
     height: 350px;
-    border-radius: 20px;
-
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .more-to-explore__container__card h4 {
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
 }
+
+.more-to-explore__container__card {
+    position: relative;
+    cursor: pointer;
+}
+
 
 .more-to-explore__container__card i {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    left: 450px;
+    top: 60px;
     scale: 200%;
     color: white;
 }
 
-.sponser {
-    background-color: #F2ECF9;
-    margin-top: 70px;
-    margin-left: 200px;
-    margin-bottom: 30px;
-    width: 1200px;
-
-}
-
-.sponser__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 50px;
-}
-
-.sponser__container__card {
-    padding: 50px;
-}
-
-.sponser__container__image img {
-    width: 500px;
-    height: 500px;
-}
-
-.sponser__container__card__logo img {
-    height: 30px;
-    width: 30px;
-}
-
-.sponser__container__card__logo {
-    display: flex;
-    flex-direction: row;
-}
-
-.sponser__container__card__logo a {
-    color: black;
-}
-
-.sponser__button {
-    border: solid black 1px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    width: 130px;
-    text-align: center;
-    padding: 8px;
-}
-
-/*Sponser Phone*/
+/*Sponser*/
 .sponser-phone {
     display: none;
 }
 
+.sponser {
+    background-color: #F2ECF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    gap: 100px;
+    padding: 50px;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+}
+
+.sponser-image img {
+    width: 500px;
+    height: 500px;
+}
+
+.sponser-logo__s1 img {
+    width: 25px;
+    height: 25px;
+}
+
+.sponser-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sponser-logo a {
+    color: black;
+}
+
+.sponser-logo__s1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sponser-logo__s2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.sponser-logo__button {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
 /*Rentals*/
 .rentals {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-top: 20px;
+   
+    padding: 0px 50px 0px 50px;
 
 }
 
 .rentals__container {
+    position: relative;
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    gap: 30px;
-    margin-top: 20px;
-    cursor: pointer;
+    overflow-x: scroll;
+    gap: 40px;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .rentals__container::-webkit-scrollbar {
@@ -506,22 +510,21 @@ body {
 .rentals__container__card img {
     height: 350px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.rentals__container__card p{
+    font-size: 11px !important;
 
 }
 
 .rentals__container__card {
     position: relative;
+    cursor: pointer;
 }
 
-.rentals__container__card i {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: white;
-    scale: 200%;
-}
-
+/*footer*/
 .footer {
     background-color: #f2f2f2;
     padding: 60px;
@@ -864,11 +867,9 @@ body {
     /*Destination */
 
     .destination {
-        margin-top: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 00px;
+        margin-top: 5px;
+        padding: 10px 10px 0px 10px;
+
     }
 
     .destination-container img {
@@ -894,36 +895,36 @@ body {
 
     .more-to-explore {
         background-color: rgb(226, 204, 176);
-        padding: 20px;
         margin-top: 20px;
+        padding: 10px 10px 0px 10px;
+    }
+
+    .more-to-explore__container {
+        gap: 20px;
+        z-index: 0;
     }
 
     .more-to-explore__container__card img {
         width: 250px;
         height: 175px;
-        border-radius: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 1;
     }
 
-    .more-to-explore h2 {
-        margin: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-
+    .more-to-explore__container__card {
+        position: relative;
+        cursor: pointer;
     }
 
-    .more-to-explore__container {
-        margin-left: 10px;
-        margin-right: 10px;
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        gap: 30px;
-        z-index: -1;
-    }
-
-    .more-to-explore__container__card h4 {
-        padding-top: 10px;
-        text-align: center;
+    .more-to-explore__container__card i {
+        position: absolute;
+        left: 220px;
+        top: 45px;
+        scale: 200%;
+        color: white;
+        z-index: 2;
     }
 
     /*sponser phone*/
@@ -933,59 +934,79 @@ body {
     }
 
     .sponser-phone {
+        background-color: #F2ECF9;
         display: flex;
-        flex-direction: column;
-        background-color: #ded7e5;
-        margin-top: 30px;
+        width: 385.6;
+        gap: 20px;
+        padding: 20px;
+        padding-left: 50px;
+        margin-top: 40px;
+
     }
 
-    .sponser-phone__container {
-        margin: 20px;
+    .sponser-phone__image img {
+        display: flex;
+        width: 90%;
+        margin-top: 10px;
     }
 
-    .sponser-phone__container__logo {
+    .sponser-phone__logo__s1 {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        gap: 7px;
+        gap: 10px;
     }
-
-    .sponser-phone__container__logo img {
+    .sponser-phone__logo__s1 img{
         height: 20px;
         width: 20px;
     }
 
-    .sponser-phone__container__image img {
-        display: flex;
-        justify-content: space-around;
-        width: 335px;
-        height: 335px;
-        margin-top: 10px;
+    .sponser-phone__logo a {
+        color: black;
     }
 
-    .sponser-phone__button {
-        border: solid black 1px;
-        width: 80px;
-        text-align: center;
-        padding: 5px;
+    .sponser-phone__logo__s2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 0px;
+    }
+
+    .sponser-phone__logo__button {
+        width: 100px;
+        display: flex;
+        justify-content: center;
         color: white;
         background-color: black;
-        border-radius: 15px;
+        border-radius: 30px;
+        padding: 10px;
+        cursor: pointer;
     }
+
 
     /*rentals*/
+    .rentals {
+        margin-top: 5px;
+        padding: 10px 10px 0px 10px;
+    }
     .rentals__container__card img {
-        height: 170px;
-        width: 170px;
-        border-radius: 20px;
+        height: 190px;
+        width: 190px;
         cursor: pointer;
         border-radius: 10px;
+        align-items: center;
+    }
+    .rentals__container__card p{
+        font-size: 11px !important;
+
+    }
+    .rentals__container__card {
+        gap: 20px;
+        z-index: 0;
+        margin-top: 0px;
     }
 
-    .rentals {
-        margin: 20px;
 
-    }
+    
 
     /*Footer Phone*/
     .footer {
